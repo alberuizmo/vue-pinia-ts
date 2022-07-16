@@ -28,7 +28,7 @@
 
 <script lang="ts" setup>
 import { useToDoStore } from "@/stores/todo";
-import { ref } from "@vue/reactivity";
+import { ref } from "vue";
 
 const titleToDo = ref("");
 

@@ -22,9 +22,7 @@ const usersList = ref<UserList[]>([]);
 onMounted(async () => {
   try {
     const { data } = await usersService.getUsers();
-    console.log("por aqui pase");
     usersList.value = [...data.data];
-    console.log("usersList", usersList);
   } catch (error) {
     console.log(error);
   }
