@@ -27,10 +27,10 @@ BaseApi.interceptors.response.use(
   },
   function (error) {
     console.log("error in interceptor");
-    /* if (error.response.status == "401") {
-        //refrescar token o redirigir al login
-        Return to login in error 401 
-      } */
+    //if (error.response.status == "401") {
+    //refrescar token o redirigir al login
+    //Return to login in error 401
+    //}
     return Promise.reject(error);
   }
 );
