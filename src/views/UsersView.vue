@@ -1,5 +1,6 @@
 <template>
   <h1>Users</h1>
+  <q-btn color="white" text-color="black" label="Standard" />
   <ul>
     <li v-for="user in usersList" :key="user.id">
       {{ user.first_name }}
